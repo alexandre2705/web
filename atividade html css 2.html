@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="autor" content="alexandre villarino e silva - Matrícula:200022204">
+    <meta name="palavras chaves" content="web, Atividades sobre CSS">
+    <title>CSS - Atividade 3</title>
+    <style>
+        
+        form {
+            width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        
+        input[type="text"], input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        
+        textarea {
+            width: 100%;
+            height: 100px;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        
+        input[type="submit"] {
+            background-color: #000000;
+            color: #fffcfc;
+            border: none;
+            padding: 15px 25px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+    <body>
+      <h1>Formulário CSS - Atividade 3</h1>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome">
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email">
+
+            <label for="interesse">Interesse:</label>
+            <select id="interesse" name="interesse">
+                <option value="web">Desenvolvimento Web</option>
+                <option value="css">CSS</option>
+                <option value="atividades">Atividades sobre CSS</option>
+            </select>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem"></textarea>
+
+            <input type="submit" value="Enviar">
+         </form>
+    </body>
+</html>
