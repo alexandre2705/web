@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript</title>
+</head>
+<body>
+    <script>
+function mostrarTabuada() { 
+        var numero = parseInt(prompt("Digite um número para mostrar a tabuada:"));
+if (!isNaN(numero)) {
+    document.write("<h2>Tabuada do " + numero + "</h2>");
+    document.write("<ul>");
+for (var i = 1; i <= 10; i++) {
+      var resultado = numero * i;
+      document.write("<li>" + numero + " x " + i + " = " + resultado + "</li>");
+    }
+    document.write("</ul>");
+} else {
+    alert("Por favor, insira um número válido.");
+  }
+}
+mostrarTabuada();
+</script>
+</body>
+</html>
